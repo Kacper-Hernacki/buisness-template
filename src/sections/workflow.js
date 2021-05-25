@@ -10,27 +10,35 @@ import ArrowEven from 'assets/arrowEven.svg';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Requirement Analysis',
+    text: 'The analysis of the project functionality, layout, etc.',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'Presentation of the plan to be performed',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Client is acquainted with the detailed plan which presents the process of making the project.',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    title: 'Making a project cost estimate',
+    text: 'Agreeing the price with the customer',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Customer receives the free prototype',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Free prototype which contains all the rquired functionality is presented to the customer.',
+  },
+  {
+    id: 5,
+    title: 'Customer agrees with the presented solution',
+    text: 'When the solution is approved, the project is executed .',
+  },
+  {
+    id: 6,
+    title: 'Project deployment',
+    text: 'After agreeing the final version, the project is deployed',
   },
 ];
 
@@ -39,8 +47,8 @@ export default function WorkFlow() {
     <section sx={styles.workflow}>
       <Container>
         <SectionHeader
-          slogan="Whats up the func"
-          title="Meet the feature of our product"
+          slogan="Workflow"
+          title="Meet the process of project execution"
           isWhite={true}
         />
         <Grid sx={styles.grid}>

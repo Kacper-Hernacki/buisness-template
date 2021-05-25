@@ -12,6 +12,7 @@ export default function Logo({ src, ...rest }) {
         display: 'flex',
         cursor: 'pointer',
         mr: 15,
+        width: '196px',
       }}
       {...rest}>
       <Image src={src} alt="logo" />

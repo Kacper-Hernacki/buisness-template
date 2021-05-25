@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb.png';
+import BannerImg from 'assets/image.jpeg';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
 
@@ -17,11 +17,13 @@ export default function Banner() {
             Check out my website to find great quality of software products and
             services
           </Text>
-          <Button variant="primary">Explore</Button>
+          <Button sx={styles.banner.button} variant="primary">
+            Explore
+          </Button>
         </Box>
-        <Box sx={styles.banner.imageBox}>
+        {/* <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt="banner" />
-        </Box>
+        </Box> */}
       </Container>
     </section>
   );
@@ -62,7 +64,7 @@ const styles = {
     container: {
       minHeight: 'inherit',
       display: 'flex',
-      flexDirection: 'column',
+      flexDirection: 'row',
       justifyContent: 'center',
     },
     contentBox: {
