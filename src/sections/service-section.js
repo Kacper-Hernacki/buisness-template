@@ -15,31 +15,30 @@ import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay, IoMdHeartEmpty } from 'react-icons/io';
 
-import ServiceThumb from 'assets/service-thumb.png';
+import ServiceThumb from 'assets/service-thumb.jpg';
 import shapePattern from 'assets/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
 
 const data = {
-  subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  subTitle: 'Services',
+  title: 'High-Qualified Web Developing Services',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'Customer Support',
+      title: 'Customer Support',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Customer is always up to date with each version of the product, so that he can make corrections, which are immidiately implemented.',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
-      text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+      altText: 'Guarantee',
+      title: 'Guarantee',
+      text: 'Each product is provided with 3 month guarantee.',
     },
   ],
 };
@@ -55,14 +54,6 @@ export default function ServiceSection() {
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
-          <Button
-            sx={styles.videoBtn}
-            onClick={handleClick}
-            aria-label="Play Button">
-            <span>
-              <IoIosPlay />
-            </span>
-          </Button>
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="shape" />
           </Box>
@@ -86,27 +77,9 @@ export default function ServiceSection() {
           </Grid>
         </Box>
       </Container>
-      <ModalVideo
-        channel="youtube"
-        isOpen={videoOpen}
-        videoId=""
-        onClose={() => setVideoOpen(false)}
-      />
     </section>
   );
 }
-
-const playPluse = keyframes`
-  from {
-    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-    opacity: 1;
-  }
-
-  to {
-	transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
-    opacity: 0;
-  }
-`;
 
 const styles = {
   coreFeature: {
@@ -139,48 +112,7 @@ const styles = {
     zIndex: -1,
     display: ['none', null, null, null, null, 'inline-block'],
   },
-  videoBtn: {
-    zIndex: 2,
-    position: 'absolute',
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: ['60px', null, '80px', null, '100px'],
-    height: ['60px', null, '80px', null, '100px'],
-    p: '0px !important',
-    backgroundColor: 'transparent',
-    '&::before': {
-      position: 'absolute',
-      content: '""',
-      left: '50%',
-      top: '50%',
-      transform: 'translateX(-50%) translateY(-50%)',
-      display: 'block',
-      width: ['60px', null, '80px', null, '100px'],
-      height: ['60px', null, '80px', null, '100px'],
-      backgroundColor: 'primary',
-      borderRadius: '50%',
-      animation: `${playPluse} 1.5s ease-out infinite`,
-      opacity: 0.5,
-    },
-    '> span': {
-      backgroundColor: 'rgba(255,255,255,0.5)',
-      width: 'inherit',
-      height: 'inherit',
-      textAlign: 'center',
-      borderRadius: '50%',
-      cursor: 'pointer',
-      transition: 'all 0.5s',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      position: 'relative',
-      zIndex: 2,
-    },
-    svg: {
-      fontSize: [40, null, 48, null, 62],
-    },
-  },
+
   contentBox: {
     width: ['100%', null, null, 315, 390, 450, null, 500],
     flexShrink: 0,

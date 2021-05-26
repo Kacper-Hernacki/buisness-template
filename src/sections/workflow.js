@@ -11,32 +11,22 @@ const data = [
   {
     id: 1,
     title: 'Requirement Analysis',
-    text: 'The analysis of the project functionality, layout, etc.',
+    text: 'The analysis of the project needed functionality, layout, etc.',
   },
   {
     id: 2,
-    title: 'Presentation of the plan to be performed',
+    title: 'Project cost estimate',
     text:
-      'Client is acquainted with the detailed plan which presents the process of making the project.',
+      'Client is acquainted with the price of the project and detailed plan which presents the process of entire service.',
   },
   {
     id: 3,
-    title: 'Making a project cost estimate',
-    text: 'Agreeing the price with the customer',
+    title: 'Work on the project',
+    text:
+      'Client is acquainted with a product and makes corrections which are  immediately implemented by the.',
   },
   {
     id: 4,
-    title: 'Customer receives the free prototype',
-    text:
-      'Free prototype which contains all the rquired functionality is presented to the customer.',
-  },
-  {
-    id: 5,
-    title: 'Customer agrees with the presented solution',
-    text: 'When the solution is approved, the project is executed .',
-  },
-  {
-    id: 6,
     title: 'Project deployment',
     text: 'After agreeing the final version, the project is deployed',
   },

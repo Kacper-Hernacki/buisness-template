@@ -14,32 +14,31 @@ const data = [
     imgSrc: Performance,
     altText: 'Fast Performance',
     title: 'Fast Performance',
-    text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+    text: 'All products are coded with extremely efficient latest technology.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Responsiveness',
+    title: 'Responsiveness',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Web apps are created to perfectly change dimensions in mobile formats.',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Modern UI/UX Design',
+    title: 'Modern UI/UX Design',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Products are designed to have the modern layout and intuitive use of application.',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Backend',
+    title: 'Backend',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'If needed, client is provided with full backend services like, configurated database and payment platforms.',
   },
 ];
 
@@ -47,7 +46,10 @@ export default function KeyFeature() {
   return (
     <section sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
-        <SectionHeader slogan="Whats the func" title="Meet the feauter" />
+        <SectionHeader
+          slogan="Product key features"
+          title="Meet the latest technology"
+        />
         <Grid sx={styles.grid}>
           {data.map((item) => (
             <FeatureCardColumn

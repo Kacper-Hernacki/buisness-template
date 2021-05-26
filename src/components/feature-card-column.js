@@ -31,7 +31,7 @@ const styles = {
     mx: ['auto', null, 0],
     ml: ['auto', null, '-13px'],
     mb: -2,
-    width: ['80px', null, null, '90px', null, 'auto'],
+    maxWidth: ['80px', null, null, '90px', null, 'auto'],
   },
   wrapper: {
     width: '100%',
