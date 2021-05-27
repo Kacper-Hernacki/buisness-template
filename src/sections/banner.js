@@ -1,9 +1,13 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/image.jpeg';
+import BannerImg from 'assets/pc-front.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GithubIcon from '@material-ui/icons/GitHub';
 
 export default function Banner() {
   return (
@@ -13,6 +17,12 @@ export default function Banner() {
           <Heading as="h1" variant="heroPrimary">
             Top Web Developement Services
           </Heading>
+          <Box sx={styles.banner.socialsBox}>
+            <InstagramIcon sx={styles.banner.socialsBox.icons} />
+            <TwitterIcon sx={styles.banner.socialsBox.icons} />
+            <GithubIcon sx={styles.banner.socialsBox.icons} />
+            <LinkedInIcon sx={styles.banner.socialsBox.icons} />
+          </Box>
           <Text as="p" variant="heroSecondary">
             Check out my website to find great quality of software products and
             services
@@ -21,9 +31,13 @@ export default function Banner() {
             Explore
           </Button>
         </Box>
-        {/* <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt="banner" />
-        </Box> */}
+        <Box sx={styles.banner.imageBox}>
+          <Image
+            sx={styles.banner.imageBox.image}
+            src={BannerImg}
+            alt="banner"
+          />
+        </Box>
       </Container>
     </section>
   );
@@ -63,9 +77,6 @@ const styles = {
     },
     container: {
       minHeight: 'inherit',
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'center',
     },
     contentBox: {
       width: ['100%', '90%', '535px', null, '57%', '60%', '68%', '60%'],
@@ -80,7 +91,23 @@ const styles = {
       mb: [0, null, -6, null, null, '-40px', null, -3],
       img: {
         position: 'relative',
-        height: [245, 'auto'],
+        minHeight: [145, 'auto'],
+      },
+    },
+    socialsBox: {
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '15px',
+      marginBottom: '15px',
+      icons: {
+        fontSize: '30px !important',
+        marginRight: '10px !important',
+        marginLeft: '10px !important',
+        cursor: 'pointer',
+
+        '&:hover': {
+          color: 'primary',
+        },
       },
     },
   },

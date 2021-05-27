@@ -15,7 +15,7 @@ import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay, IoMdHeartEmpty } from 'react-icons/io';
 
-import ServiceThumb from 'assets/service-thumb.jpg';
+import ServiceThumb from 'assets/pc.png';
 import shapePattern from 'assets/shape-pattern1.png';
 
 import Smart from 'assets/services/smart.svg';
@@ -102,7 +102,7 @@ const styles = {
     '> img': {
       position: 'relative',
       zIndex: 1,
-      height: [310, 'auto'],
+      height: [250, 'auto'],
     },
   },
   shapeBox: {
@@ -178,3 +178,5 @@ const styles = {
     },
   },
 };
+
+//<a href="https://www.freepik.com/vectors/icons">Icons vector created by fullvector - www.freepik.com</a>

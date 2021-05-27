@@ -16,34 +16,34 @@ const data = [
   {
     id: 1,
     imgSrc: Html,
-    altText: 'HTML, CSS, JS',
-    title: 'HTML, CSS, JS',
+    altText: 'HTML',
+    title: 'HTML',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'HTML stands for Hyper Text Markup Language and it is the standard markup language for creating Web pages. Html describes the structure of a Web page.',
   },
   {
     id: 2,
     imgSrc: Css,
-    altText: 'HTML, CSS, JS',
-    title: 'HTML, CSS, JS',
+    altText: 'CSS',
+    title: 'CSS',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages.',
   },
   {
     id: 3,
     imgSrc: JavaScript,
-    altText: 'HTML, CSS, JS',
-    title: 'HTML, CSS, JS',
+    altText: 'JS',
+    title: 'JavaScript',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive.',
   },
   {
     id: 4,
     imgSrc: React,
     altText: 'React',
-    title: 'React',
+    title: 'React JS',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'React JS is a JavaScript library used in web development to build interactive elements on websites.',
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const data = [
     altText: 'Next.js',
     title: 'Next.js',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'Next.js is a JavaScript framework created by Vercel. It lets you build server-side rendering and static web applications using React.',
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const data = [
     altText: 'Node.js',
     title: 'Node.js',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.',
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const data = [
     altText: 'MongoDB',
     title: 'MongoDB',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'MongoDB is a document-oriented NoSQL database used for high volume data storage.',
   },
   {
     id: 8,
@@ -75,7 +75,7 @@ const data = [
     altText: 'Firebase',
     title: 'Firebase',
     text:
-      'We believe it’s important for everyone to have access to software – especially when it comes to digital learning be navigated by keyboard and screen readers.',
+      'Firebase is a Backend-as-a-Service. It provides developers with a variety of tools and services to help them develop quality apps, grow their user base, and earn profit. It is built on Google’s infrastructure.',
   },
 ];
 

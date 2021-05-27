@@ -181,7 +181,7 @@ export default function TeamSection() {
   return (
     <section>
       <Container>
-        <SectionHeader slogan="our team" title="about us" />
+        <SectionHeader slogan="Portfolio" title="My projects" />
       </Container>
       <Grid sx={styles.grid}>
         {data.map((item) => (

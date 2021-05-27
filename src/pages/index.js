@@ -13,6 +13,7 @@ import WorkFlow from '../sections/workflow';
 import Package from '../data/package';
 import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
+import Contact from '../sections/contact';
 
 export default function IndexPage() {
   return (
@@ -28,6 +29,7 @@ export default function IndexPage() {
         <Package />
         <TeamSection />
         <TestimonialCard />
+        <Contact />
       </Layout>
     </ThemeProvider>
   );

@@ -2,39 +2,43 @@
 import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
-import FeatureThumb from 'assets/core-feature.png';
+import FeatureThumb from 'assets/image.jpeg';
 import shapePattern from 'assets/shape-pattern2.png';
 
 const data = {
-  subTitle: 'Core features',
-  title: 'Smart Jackpots that you may love this anytime & anywhere',
+  subTitle: 'About Me',
+  title: 'Get to know me better',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
-  btnName: 'Get Started',
+    'Hi, I am Kacper Hernacki, the full-stack web developer. The passion for self-developing and solving complex problems led me to programming. After 5 years at the university and constantly learning programming languages like C, C++, Java, I have got know Web developing. It boosted me as a professional coder to the place I am here.',
+  btnName: 'Curriculum vitae',
   btnURL: '#',
 };
 
 export default function CoreFeature() {
   return (
-   <section sx={{variant: 'section.coreFeature'}}>
-    <Container sx={styles.containerBox}>
-      <Box sx={styles.contentBox}>
-        <TextFeature 
-          subTitle={data.subTitle}
-          title={data.title}
-          description={data.description}
-          btnName={data.btnName}
-          btnURL={data.btnURL}
-        />
-      </Box>
-      <Box sx={styles.thumbnail}>
-        <Image src={FeatureThumb} alt="Thumbnail" />
-        <Box sx={styles.shapeBox}>
-          <Image src={shapePattern} alt="Shape"/>
+    <section sx={{ variant: 'section.coreFeature' }}>
+      <Container sx={styles.containerBox}>
+        <Box sx={styles.contentBox}>
+          <TextFeature
+            subTitle={data.subTitle}
+            title={data.title}
+            description={data.description}
+            btnName={data.btnName}
+            btnURL={data.btnURL}
+          />
         </Box>
-      </Box>
-    </Container>
-   </section>
+        <Box sx={styles.thumbnail}>
+          <Image
+            src={FeatureThumb}
+            sx={styles.containerBox.imageAbout}
+            alt="Thumbnail"
+          />
+          <Box sx={styles.shapeBox}>
+            <Image src={shapePattern} alt="Shape" />
+          </Box>
+        </Box>
+      </Container>
+    </section>
   );
 }
 
@@ -45,6 +49,10 @@ const styles = {
     justifyContent: 'space-between',
     flexWrap: ['wrap', null, null, 'nowrap'],
     pb: [0, 7, 0, null, 7],
+    imageAbout: {
+      maxWidth: '400px',
+      objectFit: 'contain',
+    },
   },
   contentBox: {
     flexShrink: 0,
