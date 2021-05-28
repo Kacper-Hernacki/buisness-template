@@ -16,7 +16,7 @@ import ModalVideo from 'react-modal-video';
 import { IoIosPlay, IoMdHeartEmpty } from 'react-icons/io';
 
 import ServiceThumb from 'assets/pc.png';
-import shapePattern from 'assets/shape-pattern1.png';
+import shapePattern from 'assets/shape-pattern-modified.png';
 
 import Smart from 'assets/services/smart.svg';
 import Secure from 'assets/services/secure.svg';
@@ -108,7 +108,7 @@ const styles = {
   shapeBox: {
     position: 'absolute',
     bottom: -68,
-    left: -160,
+    left: -90,
     zIndex: -1,
     display: ['none', null, null, null, null, 'inline-block'],
   },

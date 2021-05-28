@@ -12,67 +12,104 @@ const packages = {
   monthly: [
     {
       id: 1,
-      name: 'Free Plan',
-      description: 'For Small teams or office',
-      buttonText: 'Start free trail',
-      priceWithUnit: '$0',
+      name: 'Basic',
+      description: 'Landing Page created with React JS and Next.js.',
+      buttonText: 'Contact',
+      priceWithUnit: '$40',
       points: [
         {
           id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          icon: <IoIosCheckmarkCircle className="option__none" />,
+          text: 'Design Customization',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: 'Content Upload',
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Responsive Design',
+          isAvailable: true,
+        },
+        {
+          id: 3,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Include Source Code',
           isAvailable: true,
         },
         {
           id: 4,
-          icon: <IoIosCloseCircle />,
-          text: 'eCommerce Store ',
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Number of Pages: 1',
+          isAvailable: true,
+        },
+        {
+          id: 6,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Revisions: 1',
+          isAvailable: true,
+        },
+        {
+          id: 7,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Delivery time: 3 days ',
           isAvailable: true,
         },
       ],
     },
     {
       id: 2,
-      name: 'Business king',
-      description: 'For Enterprise business',
-      priceWithUnit: '$15',
-      buttonText: 'Create account',
+      name: 'Standard',
+      description:
+        'Up to 6 pages front-end web app created with react JS and Next.js.',
+      priceWithUnit: '$200',
+      buttonText: 'Contact',
       anotherOption: 'Or Start 14 Days trail',
       points: [
         {
           id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          icon: <IoIosCheckmarkCircle className="option__none" />,
+          text: 'Design Customization',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: 'Content Upload',
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Responsive Design',
+          isAvailable: true,
+        },
+        {
+          id: 3,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Include Source Code',
           isAvailable: true,
         },
         {
           id: 4,
           icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store ',
+          text: 'Number of Pages: 6',
+          isAvailable: true,
+        },
+        {
+          id: 6,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Revisions: 2',
+          isAvailable: true,
+        },
+        {
+          id: 7,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Delivery time: 9 days ',
           isAvailable: true,
         },
       ],
@@ -81,34 +118,52 @@ const packages = {
       id: 3,
       header: 'Suggested',
       headerIcon: <IoIosCheckmarkCircle />,
-      name: 'Pro Master',
-      description: 'For pro level developers',
-      priceWithUnit: '$24',
-      buttonText: 'Create account',
+      name: 'Premium',
+      description: 'Complex reactive front-end web app with max 10 pages.',
+      priceWithUnit: '$350',
+      buttonText: 'Contact',
       anotherOption: 'Or Start 14 Days trail',
       points: [
         {
           id: 1,
-          icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          icon: <IoIosCheckmarkCircle className="option__none" />,
+          text: 'Design Customization',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: 'Content Upload',
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Responsive Design',
+          isAvailable: true,
+        },
+        {
+          id: 3,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Include Source Code',
           isAvailable: true,
         },
         {
           id: 4,
           icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store ',
+          text: 'Number of Pages: 10',
+          isAvailable: true,
+        },
+        {
+          id: 6,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Revisions: 3',
+          isAvailable: true,
+        },
+        {
+          id: 7,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Delivery time: 14 days ',
           isAvailable: true,
         },
       ],
@@ -117,74 +172,92 @@ const packages = {
   annual: [
     {
       id: 1,
-      name: 'Free Plan',
-      description: 'For Small teams or office',
-      buttonText: 'Start free trail',
-      priceWithUnit: '$0',
+      name: 'Blog',
+      description: 'Blog website created with Next.js and sanity.io',
+      buttonText: 'Contact',
+      priceWithUnit: '$350',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: 'Content Management System',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          text: 'Responsive Design',
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Include Code Source',
           isAvailable: true,
         },
         {
           id: 4,
-          icon: <IoIosCloseCircle />,
-          text: 'eCommerce Store ',
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Revisions: 3',
+          isAvailable: true,
+        },
+        {
+          id: 5,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Delivery time: 14 days',
           isAvailable: true,
         },
       ],
     },
     {
       id: 2,
-      name: 'Business king',
-      description: 'For Enterprise business',
-      priceWithUnit: '$25',
-      buttonText: 'Create account',
+      name: 'e-commerce',
+      description: 'E-commerce web app created with react JS and Stripe',
+      priceWithUnit: '$450',
+      buttonText: 'Contact',
       anotherOption: 'Or Start 10 Days trail',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store',
+          text: 'Online Payments with Stripe',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Content Management System',
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: 'Responsive Design',
           isAvailable: true,
         },
         {
           id: 4,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder ',
+          text: 'Include Code Source',
+          isAvailable: true,
+        },
+        {
+          id: 5,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Revisions: 3 ',
+          isAvailable: true,
+        },
+        {
+          id: 6,
+          icon: <IoIosCheckmarkCircle />,
+          text: 'Delivery time: 21 days',
           isAvailable: true,
         },
       ],
     },
     {
       id: 3,
-      header: 'Suggested',
+
       headerIcon: <IoIosCheckmarkCircle />,
       name: 'Pro Master',
       description: 'For pro level developers',
@@ -294,14 +367,14 @@ export default function Package() {
               type="button"
               aria-label="Monthly"
               onClick={() => handlePricingPlan('monthly')}>
-              Monthly Plan
+              Front-end
             </button>
             <button
               className={state.active === 'annual' ? 'active' : ''}
               type="button"
               aria-label="annual"
               onClick={() => handlePricingPlan('annual')}>
-              Annual Plan
+              Full-stack
             </button>
           </Box>
         </Flex>

@@ -3,7 +3,8 @@ import { jsx, Container, Box, Image } from 'theme-ui';
 import TextFeature from 'components/text-feature';
 
 import FeatureThumb from 'assets/image.jpeg';
-import shapePattern from 'assets/shape-pattern2.png';
+import shapePattern from 'assets/shape-pattern2-modified.png';
+import { Avatar } from '@material-ui/core';
 
 const data = {
   subTitle: 'About Me',
@@ -28,7 +29,7 @@ export default function CoreFeature() {
           />
         </Box>
         <Box sx={styles.thumbnail}>
-          <Image
+          <Avatar
             src={FeatureThumb}
             sx={styles.containerBox.imageAbout}
             alt="Thumbnail"
@@ -48,9 +49,10 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
     flexWrap: ['wrap', null, null, 'nowrap'],
-    pb: [0, 7, 0, null, 7],
+
     imageAbout: {
-      maxWidth: '400px',
+      width: '300px !important',
+      height: '300px !important',
       objectFit: 'contain',
     },
   },
@@ -68,8 +70,8 @@ const styles = {
   thumbnail: {
     display: 'inline-flex',
     position: 'relative',
+    ml: 'auto',
     mr: 'auto',
-    ml: ['auto', null, null, null, 7],
     '> img': {
       position: 'relative',
       zIndex: 1,
@@ -77,9 +79,10 @@ const styles = {
     },
   },
   shapeBox: {
+    maxWidth: '200px',
     position: 'absolute',
-    bottom: -65,
-    right: -165,
+    bottom: -45,
+    right: -35,
     zIndex: -1,
     display: ['none', 'inline-block', 'none', null, 'inline-block'],
   },
