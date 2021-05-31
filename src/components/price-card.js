@@ -1,6 +1,7 @@
 import { Box, Card, Text, Heading, Button } from 'theme-ui';
 import React from 'react';
 import List from './list';
+import { Link } from 'react-scroll';
 
 export default function PriceCard({
   data: {
@@ -28,21 +29,14 @@ export default function PriceCard({
         <List items={points} childStyle={styles.listItem} />
         <Text className="package__price" sx={styles.price}>
           {priceWithUnit}
-          <span>/Monthly</span>
         </Text>
         <Box sx={styles.buttonGroup}>
-          <Button variant="primary" aria-label={buttonText}>
-            {buttonText}
-          </Button>
-          {anotherOption && (
-            <Button
-              variant="textButton"
-              className="free__trial"
-              aria-label={anotherOption}
-              sx={{ color: 'black' }}>
-              {anotherOption}
+          <Link to="contact">
+            {' '}
+            <Button variant="primary" aria-label={buttonText}>
+              {buttonText}
             </Button>
-          )}
+          </Link>
         </Box>
       </Box>
     </Card>

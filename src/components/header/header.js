@@ -26,12 +26,16 @@ export default function Header({ className }) {
             </Link>
           ))}
         </Flex>
-        <Button
-          className="donate__btn"
-          variant="secondary"
-          aria-label="Get started">
-          Blog
-        </Button>
+        <a href="https://www.thedevsuniverse.com">
+          {' '}
+          <Button
+            className="donate__btn"
+            variant="secondary"
+            aria-label="Get started">
+            Blog
+          </Button>
+        </a>
+
         <MobileDrawer />
       </Container>
     </header>

@@ -12,7 +12,6 @@ import CoreFeature from '../sections/core-feature';
 import WorkFlow from '../sections/workflow';
 import Package from '../data/package';
 import TeamSection from '../sections/team-section';
-import TestimonialCard from '../sections/testimonial';
 import Contact from '../sections/contact';
 
 export default function IndexPage() {
@@ -28,7 +27,6 @@ export default function IndexPage() {
         <WorkFlow />
         <Package />
         <TeamSection />
-        <TestimonialCard />
         <Contact />
       </Layout>
     </ThemeProvider>

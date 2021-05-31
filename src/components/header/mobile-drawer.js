@@ -4,32 +4,33 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaGithubAlt,
-  FaDribbble,
-  FaInstagram,
-  FaLinkedin,
-} from 'react-icons/fa';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GithubIcon from '@material-ui/icons/GitHub';
+import BookIcon from '@material-ui/icons/Book';
 import menuItems from './header.data';
 
 const social = [
   {
     path: '/',
-    icon: <FaLinkedin />,
+    icon: <LinkedInIcon />,
   },
   {
     path: '/',
-    icon: <FaTwitter />,
+    icon: <TwitterIcon />,
   },
   {
     path: '/',
-    icon: <FaGithubAlt />,
+    icon: <GithubIcon />,
   },
   {
-    path: '/',
-    icon: <FaInstagram />,
+    path: 'https://www.instagram.com/kacper.hernacki',
+    icon: <InstagramIcon />,
+  },
+  {
+    path: 'https://www.thedevsuniverse.com',
+    icon: <BookIcon />,
   },
 ];
 

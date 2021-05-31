@@ -336,6 +336,17 @@ export default {
         outline: 'none',
       },
     },
+    textarea: {
+      borderColor: '#E5ECF4',
+      borderRadius: 8,
+      fontFamily: 'inherit',
+      mt: '10px',
+      '&:focus': {
+        borderColor: 'primary',
+        boxShadow: (t) => `0 0 0 2px ${t.colors.primary}`,
+        outline: 'none',
+      },
+    },
   },
 
   badges: {

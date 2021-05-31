@@ -1,8 +1,11 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Text } from 'theme-ui';
-import { Link } from 'components/link';
-import data from './footer.data';
+import { jsx, Box, Container, Image, Text, Link } from 'theme-ui';
 import FooterLogo from 'assets/logo.svg';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GithubIcon from '@material-ui/icons/GitHub';
+import BookIcon from '@material-ui/icons/Book';
 
 export default function Footer() {
   return (
@@ -10,23 +13,46 @@ export default function Footer() {
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            <Image src={FooterLogo} alt="Logo" />
+            <Image src={FooterLogo} sx={styles.footer.image} alt="Logo" />
           </Link>
-          <Box sx={styles.footer.menus}>
-            <nav>
-              {data.menuItem.map((item, i) => (
-                <Link
-                  path={item.path}
-                  key={i}
-                  label={item.label}
-                  sx={styles.footer.link}
-                />
-              ))}
-            </nav>
-          </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} Company name
+            Copyright by Kacper Hernacki {new Date().getFullYear()}
           </Text>
+          <Text sx={styles.footer.vectors}>
+            Icons vector and buisness vector created by fullvector -
+            www.freepik.com
+          </Text>
+        </Box>
+        <Box sx={styles.footer.socialsBox}>
+          <Link
+            sx={styles.footer.link}
+            href="https://www.instagram.com/kacper.hernacki">
+            <InstagramIcon sx={styles.footer.socialsBox.icons} />
+          </Link>
+
+          <Link
+            sx={styles.footer.link}
+            href="https://www.twitter.com/@KacperHernacki">
+            <TwitterIcon sx={styles.footer.socialsBox.icons} />
+          </Link>
+
+          <Link
+            sx={styles.footer.link}
+            href="https://www.github.com/Kacper-Hernacki">
+            {' '}
+            <GithubIcon sx={styles.footer.socialsBox.icons} />
+          </Link>
+
+          <Link
+            sx={styles.footer.link}
+            href="https://pl.linkedin.com/in/kacper-hernacki-965161203">
+            <LinkedInIcon sx={styles.footer.socialsBox.icons} />
+          </Link>
+
+          <Link sx={styles.footer.link} href="https://www.thedevsuniverse.com">
+            {' '}
+            <BookIcon sx={styles.footer.socialsBox.icons} />
+          </Link>
         </Box>
       </Container>
     </footer>
@@ -43,6 +69,7 @@ const styles = {
       pb: ['40px', null, '100px'],
       textAlign: 'center',
       flexDirection: 'column',
+      mt: '30px',
     },
     menus: {
       mt: [3, 4],
@@ -73,6 +100,34 @@ const styles = {
     copyright: {
       fontSize: [1, '15px'],
       width: '100%',
+    },
+    image: {
+      objectFit: 'contain',
+      width: '300px',
+    },
+    vectors: {
+      fontSize: [1, '15px'],
+      width: '100%',
+    },
+    socialsBox: {
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '-30px',
+      marginBottom: '15px',
+      icons: {
+        fontSize: '30px !important',
+        marginRight: '10px !important',
+        marginLeft: '10px !important',
+        cursor: 'pointer',
+
+        '&:hover': {
+          color: 'primary',
+        },
+      },
+    },
+    link: {
+      textDecoration: 'none',
+      color: 'inherit',
     },
   },
 };

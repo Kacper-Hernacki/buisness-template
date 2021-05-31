@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
+import { Container, Box, Heading, Text, Image, Button, Link } from 'theme-ui';
 import BannerImg from 'assets/pc-front.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';
@@ -8,6 +8,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from '@material-ui/icons/GitHub';
+import BookIcon from '@material-ui/icons/Book';
 
 export default function Banner() {
   return (
@@ -18,10 +19,40 @@ export default function Banner() {
             Top Web Developement Services
           </Heading>
           <Box sx={styles.banner.socialsBox}>
-            <InstagramIcon sx={styles.banner.socialsBox.icons} />
-            <TwitterIcon sx={styles.banner.socialsBox.icons} />
-            <GithubIcon sx={styles.banner.socialsBox.icons} />
-            <LinkedInIcon sx={styles.banner.socialsBox.icons} />
+            <Link
+              sx={styles.banner.link}
+              href="https://www.instagram.com/kacper.hernacki">
+              {' '}
+              <InstagramIcon sx={styles.banner.socialsBox.icons} />
+            </Link>
+
+            <Link
+              sx={styles.banner.link}
+              href="https://www.twitter.com/@KacperHernacki">
+              {' '}
+              <TwitterIcon sx={styles.banner.socialsBox.icons} />
+            </Link>
+
+            <Link
+              sx={styles.banner.link}
+              href="https://www.github.com/Kacper-Hernacki">
+              {' '}
+              <GithubIcon sx={styles.banner.socialsBox.icons} />
+            </Link>
+
+            <Link
+              sx={styles.banner.link}
+              href="https://pl.linkedin.com/in/kacper-hernacki-965161203">
+              {' '}
+              <LinkedInIcon sx={styles.banner.socialsBox.icons} />
+            </Link>
+
+            <Link
+              sx={styles.banner.link}
+              href="https://www.thedevsuniverse.com">
+              {' '}
+              <BookIcon sx={styles.banner.socialsBox.icons} />
+            </Link>
           </Box>
           <Text as="p" variant="heroSecondary">
             Check out my website to find great quality of software products and
@@ -77,6 +108,10 @@ const styles = {
     },
     container: {
       minHeight: 'inherit',
+    },
+    link: {
+      textDecoration: 'none',
+      color: 'inherit',
     },
     contentBox: {
       width: ['100%', '90%', '535px', null, '57%', '60%', '68%', '60%'],
