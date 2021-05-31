@@ -4,35 +4,7 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GithubIcon from '@material-ui/icons/GitHub';
-import BookIcon from '@material-ui/icons/Book';
 import menuItems from './header.data';
-
-const social = [
-  {
-    path: '/',
-    icon: <LinkedInIcon />,
-  },
-  {
-    path: '/',
-    icon: <TwitterIcon />,
-  },
-  {
-    path: '/',
-    icon: <GithubIcon />,
-  },
-  {
-    path: 'https://www.instagram.com/kacper.hernacki',
-    icon: <InstagramIcon />,
-  },
-  {
-    path: 'https://www.thedevsuniverse.com',
-    icon: <BookIcon />,
-  },
-];
 
 export default function MobileDrawer() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -66,13 +38,7 @@ export default function MobileDrawer() {
             ))}
           </Box>
           <Box sx={styles.menuFooter}>
-            <Box sx={styles.social}>
-              {social.map((socialItem, i) => (
-                <Box as="span" key={i} sx={styles.social.icon}>
-                  <Link to={socialItem.path}>{socialItem.icon}</Link>
-                </Box>
-              ))}
-            </Box>
+            <Box sx={styles.social}></Box>
           </Box>
         </Box>
       </Scrollbars>
@@ -147,30 +113,6 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     mt: 'auto',
-  },
-
-  social: {
-    width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-
-    icon: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      color: 'text',
-      fontSize: 14,
-      mr: '15px',
-      transition: 'all 0.25s',
-      cursor: 'pointer',
-      ':last-child': {
-        mr: '0',
-      },
-      '&:hover': {
-        color: 'secondary',
-      },
-    },
   },
 
   button: {

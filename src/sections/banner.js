@@ -58,9 +58,12 @@ export default function Banner() {
             Check out my website to find great quality of software products and
             services
           </Text>
-          <Button sx={styles.banner.button} variant="primary">
-            Explore
-          </Button>
+          <Link href="https://thewebdevs.com">
+            {' '}
+            <Button sx={styles.banner.button} variant="primary">
+              Read my latest posts
+            </Button>
+          </Link>
         </Box>
         <Box sx={styles.banner.imageBox}>
           <Image
