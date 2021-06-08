@@ -49,13 +49,24 @@ export default function MobileDrawer() {
 const styles = {
   handler: {
     display: 'flex',
-    alignItems: 'center',
+
     justifyContent: 'center',
-    flexShrink: '0',
     width: '26px',
     cursor: 'pointer',
     '@media screen and (min-width: 1024px)': {
       display: 'none',
+    },
+    '@media screen and (max-width: 900px)': {
+      backgroundColor: 'background',
+      padding: '8px',
+      width: '42px',
+      borderRadius: '5px',
+    },
+
+    '@media screen and (max-width: 400px)': {
+      backgroundColor: 'transparent',
+      padding: '0px',
+      width: '26px',
     },
   },
 

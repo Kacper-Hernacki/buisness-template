@@ -58,11 +58,13 @@ export default function Banner() {
             Check out my website to find great quality of software products and
             services
           </Text>
-          <Link href="https://thewebdevs.com">
+          <Link href="https://thedevsuniverse.com">
             {' '}
-            <Button sx={styles.banner.button} variant="primary">
-              Read my latest posts
-            </Button>
+            <Link href="https://thedevsuniverse.com">
+              <Button sx={styles.banner.button} variant="primary">
+                Read my latest posts
+              </Button>
+            </Link>
           </Link>
         </Box>
         <Box sx={styles.banner.imageBox}>
@@ -130,6 +132,8 @@ const styles = {
       img: {
         position: 'relative',
         minHeight: [145, 'auto'],
+        objectFit: 'contain',
+        '@media screen and (max-width: 600px)': { display: 'none' },
       },
     },
     socialsBox: {

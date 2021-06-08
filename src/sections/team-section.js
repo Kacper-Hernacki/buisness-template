@@ -9,7 +9,8 @@ import page1 from 'assets/portfolio/stajnia.png';
 import Member2 from 'assets/portfolio/thegrinder.png';
 import Member3 from 'assets/portfolio/covid.png';
 import Member4 from 'assets/portfolio/poduchy.png';
-import Member5 from 'assets/portfolio/allegro.png';
+import Member5 from 'assets/portfolio/blog.png';
+import Member6 from 'assets/portfolio/allegro.png';
 
 const data = [
   {
@@ -42,7 +43,7 @@ const data = [
   },
   {
     id: 5,
-    imgSrc: Member5,
+    imgSrc: Member6,
     altText: 'Allegro Clone',
     title: 'Allegro Clone',
     url: 'https://allegro-clone-bc495.web.app/',

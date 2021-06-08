@@ -53,7 +53,7 @@ export default function ServiceSection() {
     <section sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="Thumbnail" />
+          <Image sx={styles.imgThumbnail} src={ServiceThumb} alt="Thumbnail" />
           <Box sx={styles.shapeBox}>
             <Image src={shapePattern} alt="shape" />
           </Box>
@@ -82,6 +82,9 @@ export default function ServiceSection() {
 }
 
 const styles = {
+  imgThumbnail: {
+    objectFit: 'contain',
+  },
   coreFeature: {
     py: [0, null, null, 2, null, 7],
     position: 'relative',

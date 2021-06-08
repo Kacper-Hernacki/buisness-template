@@ -12,7 +12,7 @@ const data = {
   description:
     'Hi, I am Kacper Hernacki, the full-stack web developer. The passion for self-developing and solving complex problems led me to programming. After 5 years at the university and constantly learning programming languages like C, C++, Java, I have got know Web developing. It boosted me as a professional coder to the place I am here.',
   btnName: 'Curriculum vitae',
-  btnURL: '#',
+  btnURL: 'assets/cd.pdf',
 };
 
 export default function CoreFeature() {
@@ -25,7 +25,7 @@ export default function CoreFeature() {
             title={data.title}
             description={data.description}
             btnName={data.btnName}
-            btnURL={data.btnURL}
+            btnURL={data.buttonURL}
           />
         </Box>
         <Box sx={styles.thumbnail}>

@@ -13,9 +13,18 @@ export default function Logo({ src, ...rest }) {
         cursor: 'pointer',
         mr: 15,
         width: '196px',
+        '@media screen and (max-width: 800px)': { display: 'none' },
       }}
       {...rest}>
-      <Image src={src} alt="logo" />
+      <Image sx={styles.logo} src={src} alt="logo" />
     </Link>
   );
 }
+
+const styles = {
+  logo: {
+    '@media screen and (max-width: 900px)': {
+      display: 'none',
+    },
+  },
+};
