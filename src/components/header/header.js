@@ -10,16 +10,6 @@ import menuItems from './header.data';
 import menuItemsPL from './headerPL.data';
 
 export default function Header({ className }) {
-  const [language, setLanguage] = useState('EN');
-
-  const polish = () => {
-    return true;
-  };
-
-  const english = () => {
-    return true;
-  };
-
   return (
     <header sx={styles.header} className={className} id="header">
       <Container sx={styles.container}>
@@ -39,12 +29,11 @@ export default function Header({ className }) {
           ))}
         </Flex>
         <Flex sx={styles.languages}>
-          <div onClick={polish} sx={styles.languages.language}>
+          <a
+            href="https://www.kacperhernacki.pl"
+            sx={styles.languages.language}>
             PL
-          </div>
-          <div onClick={english} sx={styles.languages.language}>
-            EN
-          </div>
+          </a>
         </Flex>
         <a href="https://www.thedevsuniverse.com">
           {' '}
@@ -78,7 +67,19 @@ const positionAnim = keyframes`
 const styles = {
   languages: {
     mr: '20px',
-    language: { ml: '5px', cursor: 'pointer' },
+    language: {
+      ml: '5px',
+      cursor: 'pointer',
+      textDecoration: 'none',
+      color: 'white',
+      backgroundColor: 'primary',
+      fontWeight: 'bold',
+      width: '40px',
+      height: '40px',
+      display: 'grid',
+      placeItems: 'center',
+      borderRadius: '20px',
+    },
   },
   header: {
     color: 'text',

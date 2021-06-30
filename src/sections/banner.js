@@ -58,9 +58,9 @@ export default function Banner() {
             Check out my website to find great quality of software products and
             services
           </Text>
-          <Link href="https://thedevsuniverse.com">
+          <Link href="https://www.thedevsuniverse.com">
             {' '}
-            <Link href="https://thedevsuniverse.com">
+            <Link href="https://www.thedevsuniverse.com">
               <Button sx={styles.banner.button} variant="primary">
                 Read my latest posts
               </Button>
